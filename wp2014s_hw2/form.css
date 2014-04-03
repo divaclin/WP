@@ -1,0 +1,21 @@
+body{
+	width:780px;
+	background:url('img/food.png');
+	margin: 0 auto;
+}
+.comment{
+	width:45%;
+	height:145px;
+}
+.submit{
+	width:80px;
+}
+div{
+	padding:4px;
+}
+img{
+	position:relative;
+	left:350px;
+	top:-550px;
+	z-index:-1;
+}
