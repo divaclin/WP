@@ -7,21 +7,25 @@
    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
    <link rel="stylesheet" href="apply/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
    <script type="text/javascript" src="apply/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-   <link rel="stylesheet" type="text/css" href="style.css">
    <script type="text/javascript" src="apply/scrollIt/scrollIt.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
    <title>Curriculum Vitae Website</title>
   </head>
   <script type="text/javascript">
-  	$(document).ready(function() {
-  		$(".fancybox").fancybox();
-  	});
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+    		'type': 'iframe', 
+    		'scrolling': 'no',  
+    		'iframe': {'scrolling': 'no'}
+		});				
+	});  
 	$(function(){
 	  $.scrollIt();
 	});
   </script>
   <body>
 	  <div id="wrapper">
-		  <header id="Home">
+		  <header id="Home" data-scroll-nav="0">
 		      <nav class="navbar navbar-inverse navbar-fixed-top">
 		          <div class="navbar-inner">
 		              <div class="container">
@@ -98,6 +102,7 @@
 			  </section>
 		  </article>
 		  <footer>
+			  <section>Email:99703006@nccu.edu.tw</section>
 		  </footer>
 	  </div>
   </body>

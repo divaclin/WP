@@ -9,15 +9,14 @@ body{
 	width:960px;
 	margin-left:auto;
 	margin-right:auto;
-    border:thin dashed #fff;
+	background:url('img/light_honeycomb.png');
 }
 #wrapper{
 	width:940px;
-	height:4000px;
+	height:3890px;
 	margin-left:auto;
 	margin-right:auto;
 	border:0px;
-	border:thin dashed #000;
 }
 header,header nav ,header div{
 	height:40px;
@@ -47,10 +46,10 @@ header,header nav ,header div{
 	width:220px;
 	height:220px;
 	background:#6b956d;
-	opacity:0.2;
+	opacity:0.7;
 }
 .hex_profile:hover{
-	opacity:0.8;
+	opacity:1;
 }
 .Hex{
   text-align:center;
@@ -136,21 +135,10 @@ header,header nav ,header div{
 	left:715px;
 	top:-1210px;
 }
-.circle{
-    width: 220px;
-    height: 220px;
-    background: red;
-    -moz-border-radius: 110px;
-    -webkit-border-radius: 110px;
-    border-radius: 110px;
-	text-align:center;
-    letter-spacing: 6px;
-    line-height:220px;
-}
 .talkbubble {
-   width: 220px; 
+   width: 300px; 
    height: 80px; 
-   background: red;
+   background:#fff;
    position: relative;
    -moz-border-radius:    10px; 
    -webkit-border-radius: 10px; 
@@ -158,19 +146,20 @@ header,header nav ,header div{
    text-align:center;
    letter-spacing: 6px;
    line-height:80px;
-   left:360px;
-   top:500px;
-      
+   font-size:30px;
+   left:530px;
+   top:330px;
+   color:#ccc;
 }
 .talkbubble:before {
    content:"";
    position: absolute;
-   right: 100%;
-   top: 26px;
+   right: 97%;
+   top: 45px;
    width: 0;
    height: 0;
    border-top: 13px solid transparent;
-   border-right: 26px solid red;
+   border-right: 26px solid #fff;
    border-bottom: 13px solid transparent;
 }
 #Education{
@@ -179,7 +168,7 @@ header,header nav ,header div{
 	height:800px;
 	margin:0 auto;
 	top:758px;
-	background:#5e6742;
+	background:#6d6d6d;
 }
 #Education img{
 	display:none;
@@ -192,11 +181,11 @@ header,header nav ,header div{
 	position:absolute;
 	left:360px;
 	top:150px;
-	opacity:0.3;
 	display:block;
 	text-align:center;
     letter-spacing: 6px;
     line-height:220px;
+	opacity:0.9;
 }
 #round2{
 	width:220px;
@@ -205,11 +194,11 @@ header,header nav ,header div{
 	position:absolute;
 	left:250px;
 	top:342px;
-	opacity:0.3;
 	display:block;
 	text-align:center;
     letter-spacing: 6px;
     line-height:220px;
+    opacity:0.9;
 }
 #round3{
 	width:220px;
@@ -218,15 +207,14 @@ header,header nav ,header div{
 	position:absolute;
 	left:470px;
 	top:342px;
-	opacity:0.3;
 	display:block;
 	text-align:center;
     letter-spacing: 6px;
     line-height:220px;
+    opacity:0.9;
 }
 #round1:hover img,#round2:hover img,#round3:hover img{
 	display:inline;
-	opacity:1;
 }
 .resize{
 	width:100px;
@@ -243,8 +231,8 @@ header,header nav ,header div{
 	position:absolute;
 	width:400px;
 	height:300px;
-	left:34%;
-	top:150px;
+	left:13%;
+	top:220px;
 }
 #Learning_Experience{
 	position:relative;
@@ -272,16 +260,27 @@ header,header nav ,header div{
 	font-size:30px;
 	text-align:center;
 	width:940px;
-	height:800px;
+	height:700px;
 	top:750px;
 }
 #Hobbies_left{
 	position:absolute;
-	top:200px;
+	top:150px;
 	left:150px;
 }
 #Hobbies_right{
 	position:absolute;
-	top:200px;
+	top:150px;
 	right:150px;
+}
+footer{
+	width:940px;
+	height:50px;
+	background:#123e4e;
+	position:relative;
+	top:690px;
+	text-align:center;
+	letter-spacing:6px;
+	color:#fff;
+	line-height:50px;	
 }
