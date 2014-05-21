@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
    <head>
 	   <meta charset="UTF-8">
 	   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,14 @@
 	   <title>Contact Form</title>
    </head>
    <body>
+	   <div id="fb-root"></div>
+	   <script>(function(d, s, id) {
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) return;
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=767421996625577&version=v2.0";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));</script>
 	   <div>
 	   <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDZ3dGNNLVFBTjR4bktTNGhQVEFfa3c6MA&amp;ifq" method="POST">
  				<input type="hidden" name="entry.0.single" value="99703006"></input>
@@ -34,6 +42,7 @@
 				<p>Submit after answering all question</p>
  				<input class="submit" type="submit" name="submit" value="Submit"></input>       
 	   </form>
+	   <fb:comments href="http://example.com/comments" numposts="5" colorscheme="light"></fb:comments>
    </div>
    <img src="img/alpaca.png" />
    </body>

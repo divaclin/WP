@@ -20,9 +20,9 @@
   <script type="text/javascript">
 	$(document).ready(function() {
 		$('.fancybox').fancybox({
-    		'type': 'iframe', 
+    		/*'type': 'iframe', 
     		'scrolling': 'no',  
-    		'iframe': {'scrolling': 'no'}
+    		'iframe': {'scrolling': 'no'}*/
 		});				
 	});  
 	$(function(){
@@ -30,6 +30,14 @@
 	});
   </script>
   <body>
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=767421996625577&version=v2.0";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
 	  <div id="wrapper">
 		  <header id="Home" data-scroll-nav="0">
 		      <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -50,6 +58,7 @@
 		  </header>
 		  <article>
 			  <section id="Personal" data-scroll-index="0">
+				  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 				  <div id="hex1" class="Hex fixed_img"></div>
 				  <div id="hex2" class="Hex hex_profile">Yu-Hsiang Lin</div>
 				  <div id="hex3" class="Hex hex_profile">Profile</div>
