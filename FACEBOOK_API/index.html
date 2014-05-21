@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 <script>
@@ -17,7 +18,12 @@
                     var uid = response.authResponse.userID;
                     var accessToken = response.authResponse.accessToken;
                     FB.api('/me', function (response) {
-                        console.log(response);
+                        
+						$('body').append(response);
+						$('body').append('My links is' + response.link);
+						$('body').append('My Username is' + response.username);
+						$('body').append('My ID is' + response.id);
+						console.log(response);
                         console.log('My links is' + response.link);
                         console.log('My Username is' + response.username);
                         console.log('My ID is' + response.id);
